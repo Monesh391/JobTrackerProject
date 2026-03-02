@@ -66,15 +66,10 @@ WSGI_APPLICATION = 'jobtracker.wsgi.application'
 # ======================
 # DATABASE (PostgreSQL)
 # ======================
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jobtracker_db',
-        'USER': 'postgres',
-        'PASSWORD': 'Postgres@123',   # must match what you set during install
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
 
